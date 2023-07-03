@@ -1,0 +1,32 @@
+<div id="" class="post">
+    <div id="">
+        <img id="" src=""/>
+        <div>
+            <span>{{user.firstName}} {{user.lastName}}</span>
+            <span>{{tweet.date}}</span>
+        </div>
+        <div>{{tweet.text}}</div>
+        <div><img /></div>
+        <div>
+            <nav>
+                <button>Comments</button>
+                <button>{{tweet.retweets}} Retweets</button>
+                <button>{{tweet.saved}} Saved</button>
+            </nav>
+        </div>
+        <nav>
+            <button>Comments</button>
+            <button>Retweets</button>
+            <button>Likes</button>
+            <button>Saved</button>
+        </nav>
+        <div>
+            <img />
+            <input type="text" />
+            <button><img/></button>
+        </div>
+        <div *ngFor="let comment of comments">
+            <app-comment [comment]="comment"></app-comment>
+        </div>
+    </div>
+</div>

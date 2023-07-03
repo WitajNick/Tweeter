@@ -1,0 +1,68 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+#header {
+    height:70px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    display: grid;
+    grid-template-columns: 260px calc(100% - 470px) 210px;
+    background-color: white;
+    font-family: Roboto;
+}
+#logomark {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    justify-self: center;
+}
+#logomark:hover {
+    filter: brightness(0.8);
+}
+#logomark-img {
+    height: 40px;
+}
+#logomark-text {
+    margin: 0 0 0 15px;
+    font-family: Roboto;
+    font-size: 16pt;
+}
+#header-nav {
+    justify-self: center;
+    display: flex;
+}
+#user-menu {
+    justify-self: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: fit-content;
+}
+#user-menu-img {
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+#user-menu-name {
+    white-space: nowrap;
+}
+#header-nav-home, #header-nav-explore, #header-nav-bookmarks {
+    margin: 0 10px 0 10px;
+    border-width: 0 0 5px 0;
+    border-style: none;
+    padding: 0 10px 0 10px;
+    height: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-color: rgba(28, 140, 214, 1);
+    color: rgb(83, 83, 83);
+}
+#header-nav-home.active, #header-nav-explore.active, #header-nav-bookmarks.active {
+    border-style: solid;
+}

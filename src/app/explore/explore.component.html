@@ -1,0 +1,63 @@
+<main>
+    <app-header tab="explore"></app-header>
+    <div id="explore">
+        <div id="explore-column-1">
+            <aside id="explore-filter">
+                <button 
+                    id="explore-filter-tweets"
+                    (click)="updateTab('Tweets')"
+                    [className] = "(tab == 'Tweets') ? 'active' : ''"
+                >
+                    Tweets
+                </button>
+                <button 
+                    id="explore-filter-tweetsAndReplies"
+                    (click)="updateTab('TweetsAndReplies')"
+                    [className] = "(tab == 'TweetsAndReplies') ? 'active' : ''"
+                >
+                    Tweets and Replies
+                </button>
+                <button 
+                    id="explore-filter-media"
+                    (click)="updateTab('Media')"
+                    [className] = "(tab == 'Media') ? 'active' : ''"
+                >
+                    Media
+                </button>
+                <button 
+                    id="explore-filter-likes"
+                    (click)="updateTab('Likes')"
+                    [className] = "(tab == 'Likes') ? 'active' : ''"
+                >
+                    Likes
+                </button>
+            </aside>
+        </div>
+        <div id="explore-column-2">
+            <div 
+                id="explore-searchBox"
+                (click)="focusSearch()"
+            >
+                <img 
+                    id="explore-searchBox-icon" 
+                    src="/assets/imgs/search.svg"
+                />
+                <input type="search" placeholder="Search" id="explore-searchBox-input"/>
+                <button
+                    id="explore-searchBox-button"
+                    (click)="unfocusSearch()"
+                >
+                    Search
+                </button>
+            </div>
+            <div *ngFor="let tweet of tweets">
+                <app-post 
+                    [tweet]="tweet" 
+                    *ngIf="shouldAppear(tweet)"
+                >
+                </app-post>
+            </div>
+        </div>
+    </div>
+</main>
+

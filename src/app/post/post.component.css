@@ -1,0 +1,11 @@
+.post {
+    width: 600px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(155, 155, 155);
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    font-family: Roboto;
+}

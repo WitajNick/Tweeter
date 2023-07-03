@@ -1,0 +1,212 @@
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-center {
+    max-width: 500px;
+    width: 500px;
+    height: 600px;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(66, 66, 66);
+    border-style: solid;
+}
+#login-close {
+    justify-self: center;
+    border-style: none;
+    background: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+}
+#login-close:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+#login-close-cross {
+    height: 20px;
+    width: 20px;
+}
+#login-header {
+    height: 100px;
+}
+#login-header-rowA {
+    display: grid;
+    grid-template-columns: 50px calc(100% - 100px) 50px;
+    grid-template-rows: 50px;
+    align-items: center;
+    height: 50px;
+}
+#login-tweeter-logo {
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+}
+h1 {
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 30px;
+}
+#login-header-rowB {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#oauth-logins {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 60px 60px 60px;
+    justify-content: center;
+    align-items: center;
+}
+#google-login-button, #facebook-login-button, #microsoft-login-button, #apple-login-button {
+    border-style: solid;
+    height: 38px;
+    width: 260px;
+    background-color: white;
+    border-radius: 50px;
+    border-width: 1px;
+    justify-self: center;
+    cursor: pointer;
+    border-color: rgb(139 139 139);
+    font-size: 14px;
+    font-weight: 500;
+    display: grid;
+    padding: 0 40px 0 40px;
+    grid-template-columns: 30px calc(100% - 30px);
+}
+#googl-button:hover, #facebook-login-button:hover, #microsoft-login-button:hover, #apple-login-button:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+#google-button {
+    width: 240px;
+    justify-self: center;
+}
+.oauth-button-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+.oauth-button-text {
+    justify-self: center;
+    align-self: center;
+}
+#login-seperator {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#login-seperator-text {
+    justify-self: center;
+    align-self: center;
+}
+#login-username {
+    display: grid;
+    grid-template-columns: 260px;
+    justify-content: center;
+    font-family: Roboto;
+    margin-top: 10px;
+}
+#login-username-input {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.4);
+}
+#login-username-label {
+    justify-self: flex-start;
+    color: rgba(0, 0, 0, 0.6);
+}
+#login-username-field {
+    width: calc(100% - 4px);
+    height: 22px;
+    justify-self: center;
+    border-style: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+#login-next-button {
+    width: 260px;
+    border-style: none;
+    background: black;
+    color: white;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: Roboto;
+}
+#login-next-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+#login-forgot-password-button {
+    width: 260px;
+    background: white;
+    color: black;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(139 139 139);
+    font-size: 14px;
+    font-family: Roboto;
+}
+#login-forgot-password-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#login-buttons {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 70px;
+    justify-content: center;
+    align-items: center;
+}
+#new-account-block {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#login-seperator {
+    display: grid;
+    grid-template-columns: 260px;
+    justify-content: center;
+    align-items: center;
+}
+#login-seperator-main {
+    display: grid;
+    grid-template-columns: 115px calc(100% - 230px) 115px;
+}
+#login-seperator-left-line, #login-seperator-right-line {
+    width: 100%;
+    display: inline-block;
+    height: 0px;
+    align-self: center;
+}
+#login-seperator-text {
+    display: inline-block;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    font-family: Roboto;
+}
+#new-account-text {
+    font-family: Roboto;
+}
+#sign-up-link {
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+#sign-up-link:hover {
+    text-decoration: underline;
+}

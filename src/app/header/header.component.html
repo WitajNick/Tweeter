@@ -1,0 +1,33 @@
+<header id="header">
+    <a id="logomark" href="/home">
+        <img id="logomark-img" src="/assets/imgs/logo.svg"/>
+        <h1 id="logomark-text">Tweeter</h1>
+    </a>
+    <nav id="header-nav">
+        <a 
+            id="header-nav-home" 
+            [className]="(tab==='home') ? 'active' : ''"
+            href="/home"
+        >
+            Home
+        </a>
+        <a 
+            id="header-nav-explore" 
+            [className]="(tab==='explore') ? 'active' : ''"
+            href="/explore"
+        >
+            Explore
+        </a>
+        <a 
+            id="header-nav-bookmarks" 
+            [className]="(tab==='bookmarks') ? 'active' : ''"
+            href="/bookmarks"
+        >
+            Bookmarks
+        </a>
+    </nav>
+    <div id="user-menu">
+        <img id="user-menu-img" [src]="profileImgUrl"/>
+        <div id="user-menu-name">{{profileFirstName}} {{profileLastName}}</div>
+    </div>
+</header>

@@ -1,0 +1,270 @@
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up-center {
+    max-width: 500px;
+    width: 500px;
+    height: 600px;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(66, 66, 66);
+    border-style: solid;
+}
+#sign-up-close {
+    justify-self: center;
+    border-style: none;
+    background: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+}
+#sign-up-close:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+#sign-up-close-cross {
+    height: 20px;
+    width: 20px;
+}
+#sign-up-header {
+    height: 100px;
+}
+#sign-up-header-rowA {
+    display: grid;
+    grid-template-columns: 50px calc(100% - 100px) 50px;
+    grid-template-rows: 50px;
+    align-items: center;
+    height: 50px;
+}
+#sign-up-tweeter-logo {
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+}
+h1 {
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 30px;
+}
+#sign-up-header-rowB {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#oauth-sign-ups {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 60px 60px 60px;
+    justify-content: center;
+    align-items: center;
+}
+#google-sign-up-button, #facebook-sign-up-button, #microsoft-sign-up-button, #apple-sign-up-button {
+    border-style: solid;
+    height: 38px;
+    width: 260px;
+    background-color: white;
+    border-radius: 50px;
+    border-width: 1px;
+    justify-self: center;
+    cursor: pointer;
+    border-color: rgb(139 139 139);
+    font-size: 14px;
+    font-weight: 500;
+    display: grid;
+    padding: 0 40px 0 40px;
+    grid-template-columns: 30px calc(100% - 30px);
+}
+#google-sign-up-button:hover, #facebook-sign-up-button:hover, #microsoft-sign-up-button:hover, #apple-sign-up-button:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+.oauth-button-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+}
+.oauth-button-text {
+    justify-self: center;
+    align-self: center;
+}
+#sign-up-seperator {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#sign-up-seperator-text {
+    justify-self: center;
+    align-self: center;
+}
+#sign-up-username {
+    display: grid;
+    grid-template-columns: 260px;
+    justify-content: center;
+    font-family: Roboto;
+    margin-top: 10px;
+}
+#sign-up-username-input {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.4);
+}
+#sign-up-username-label {
+    justify-self: flex-start;
+    color: rgba(0, 0, 0, 0.6);
+}
+#sign-up-username-field {
+    width: calc(100% - 4px);
+    height: 22px;
+    justify-self: center;
+    border-style: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+#sign-up-next-button {
+    width: 260px;
+    border-style: none;
+    background: black;
+    color: white;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: Roboto;
+}
+#sign-up-next-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+#sign-up-forgot-password-button {
+    width: 260px;
+    background: white;
+    color: black;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(139 139 139);
+    font-size: 14px;
+    font-family: Roboto;
+}
+#sign-up-forgot-password-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#sign-up-buttons {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 70px;
+    justify-content: center;
+    align-items: center;
+}
+#create-account-block {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px;
+}
+#create-account-button {
+    width: 260px;
+    background: white;
+    color: black;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: Roboto;
+    justify-self: center;
+    align-self: center;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 500;
+}
+#create-account-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+#new-account-block {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up-seperator {
+    display: grid;
+    grid-template-columns: 260px;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up-seperator-main {
+    display: grid;
+    grid-template-columns: 115px calc(100% - 230px) 115px;
+}
+#sign-up-seperator-left-line, #sign-up-seperator-right-line {
+    width: 100%;
+    display: inline-block;
+    height: 0px;
+    align-self: center;
+}
+#sign-up-seperator-text {
+    display: inline-block;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    font-family: Roboto;
+}
+#new-account-text {
+    font-family: Roboto;
+}
+#sign-up-link {
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+#sign-up-link:hover {
+    text-decoration: underline;
+}
+#sign-up-legal-policy-block {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#sign-up-legal-policy {
+    font-size: 11pt;
+    color: rgb(77, 77, 77);
+    justify-self: center;
+    width: 260px;
+}
+#sign-up-legal-policy a {
+    color:rgb(22, 125, 194);
+    cursor: pointer;
+}
+#sign-up-legal-policy a:hover {
+    text-decoration: underline;
+}
+#existing-account-block {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#existing-account-text {
+    font-size: 12pt;
+    color: black;
+    justify-self: center;
+    width: 260px;
+}
+#existing-account-text a {
+    color: black;
+    text-decoration: none;
+    color:rgb(22, 125, 194);
+}
+#existing-account-text a:hover {
+    text-decoration: underline;
+}

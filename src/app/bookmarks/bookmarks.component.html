@@ -1,0 +1,49 @@
+<main>
+    <app-header tab="bookmarks"></app-header>
+    <div id="bookmarks">
+        <div id="bookmarks-column-1">
+            <aside id="bookmarks-filter">
+                <button
+                    id="bookmarks-filter-tweets"
+                    (click)="updateTab('Tweets')"
+                    [className] = "(tab == 'Tweets') ? 'active' : ''"
+                >
+                    Tweets
+                </button>
+                <button 
+                    id="bookmarks-filter-tweetsAndReplies"
+                    (click)="updateTab('TweetsAndReplies')"
+                    [className] = "(tab == 'TweetsAndReplies') ? 'active' : ''"
+                >
+                    Tweets and Replies
+                </button>
+                <button 
+                    id="bookmarks-filter-media"
+                    (click)="updateTab('Media')"
+                    [className] = "(tab == 'Media') ? 'active' : ''"
+                >
+                    Media
+                </button>
+                <button 
+                    id="bookmarks-filter-likes"
+                    (click)="updateTab('Likes')"
+                    [className] = "(tab == 'Likes') ? 'active' : ''"
+                >
+                    Likes
+                </button>
+            </aside>
+        </div>
+        <div id="bookmarks-column-2">
+            <div 
+                id="bookmarked-posts" 
+                *ngFor="let tweet of tweets" 
+            >
+                <app-post 
+                    [tweet]="tweet"
+                    *ngIf="shouldAppear(tweet)"
+                >
+                </app-post>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,37 @@
+<app-header></app-header>
+<main>
+    <div id="profile-banner">
+        <img id="profile-banner-img"/>
+        <div id="profile-banner-info">
+            <img id="profile-banner-info-img"/>
+            <div id="profile-banner-info-a">
+                <div id="profile-banner-info-b">
+                    <span id="profile-banner-info-name">Nick Liszewski</span>
+                    <span id="profile-banner-info-following">{{user.followingUserIds.length}} Following</span>
+                    <span id="profile-banner-info-followers">{{user.followers}} Followers</span>
+                </div>
+                <div id="profile-banner-info-c">
+                    {{user.summary}}
+                </div>
+            </div>
+            <button id="profile-banner-followButton">
+                Follow
+            </button>
+        </div>
+    </div>
+    <div id="profile-content">
+        <div id="profile-content-a">
+            <aside id="profile-content-filter">
+                <button id="profile-content-filter-tweets">Tweets</button>
+                <button id="profile-content-filter-tweetsAndReplies">Tweets and Replies</button>
+                <button id="profile-content-filter-media">Media</button>
+                <button id="profile-content-filter-likes">Likes</button>
+            </aside>
+        </div>
+        <div id="profile-content-b">
+            <div *ngFor="let tweet of tweets">
+                <app-post [tweet]="tweet"></app-post>
+            </div>
+        </div>
+    </div>
+</main>

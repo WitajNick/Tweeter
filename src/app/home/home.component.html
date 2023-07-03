@@ -1,0 +1,101 @@
+<main>
+    <app-header tab="home"></app-header>
+    <div id="home">
+        <div id="home-column-1" class="column-1">
+            <div id="home-tweet-menu">
+                <h3>Tweet Something</h3>
+                <hr/>
+                <div
+                    id="home-tweet-inner"
+                >
+                    <img 
+                        id="home-tweet-user-picture"
+                        src={{profilePicture}}
+                    />
+                    <textarea
+                        id="home-tweet-text"
+                        type="text" 
+                        placeholder="What's happening?"
+                    ></textarea>
+                </div>
+                <div id="home-tweet-button-group">
+                    <button
+                        id="home-tweet-uploadImgButton"
+                    >
+                        <img
+                            id="home-tweet-uploadImgButton-img"
+                            src="/assets/imgs/img.svg"
+                        />
+                    </button>
+                    <button 
+                        id="home-tweet-privacy-toggle"
+                    >
+                        <img
+                            id="home-tweet-privacy-toggle-img"
+                            src="/assets/imgs/glove.svg"
+                        />
+                        <span
+                            id="home-tweet-privacy-toggle-text"
+                        >
+                            Everyone can reply
+                        </span>
+                    </button>
+                    <button 
+                        id="submit-tweet-button"
+                    >
+                        Tweet
+                    </button>
+                </div>
+            </div>
+            <div *ngFor="let tweet of tweets" id="post-feed">
+                <app-post [tweet]="tweet"></app-post>
+            </div>
+        </div>
+        <div id="home-column-2" class="column-2">
+            <div id="trends">
+                <h3>Trends for you</h3>
+                <hr/>
+                <li *ngFor="let topic of topics" class="topic">
+                    <span class="topic-name">#{{topic.name}}</span>
+                    <span class="topic-engagement">{{topic.tweets}} Tweets</span>
+                </li>
+            </div>
+            <div id="followRecommendations">
+                <h3>Who to follow</h3>
+                <hr/>
+                <li *ngFor="let user of users" id="recommendedUsers">
+                    <div class="recommendedUser">
+                        <img 
+                            src={{user.profileImgLink}} 
+                            class="recommendedUser-img"
+                        />
+                        <div class="recommendedUser-data">
+                            <span class="recommendedUser-name">
+                                {{user.firstName}} {{user.lastName}}
+                            </span>
+                            <span class="recommendedUser-followers">
+                                {{user.followers}} Followers
+                            </span>
+                        </div>
+                        <button 
+                            class="recommendedUser-follow"
+                        >
+                            Follow
+                        </button>
+                    </div>
+                    <div class="recommendedUser-summary">{{user.summary}}</div>
+                    <div
+                        class="recommendedUser-banner" 
+                    >
+                        <img 
+                            class="recommendedUser-banner-img" 
+                            src={{user.bannerImgLink}} 
+                        />
+                    </div>
+                    <hr/>
+                </li>
+            </div>
+
+        </div>
+    </div>
+</main>
